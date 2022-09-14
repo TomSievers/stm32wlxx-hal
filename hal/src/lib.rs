@@ -65,6 +65,7 @@ pub mod spi;
 pub mod subghz;
 pub mod uart;
 pub mod util;
+pub mod watchdog;
 
 mod ratio;
 pub use ratio::Ratio;
