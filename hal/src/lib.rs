@@ -10,7 +10,7 @@
 #![warn(missing_docs)]
 #![warn(clippy::wildcard_imports)]
 
-#[cfg(any(
+/*#[cfg(any(
     all(feature = "stm32wl5x_cm0p", feature = "stm32wl5x_cm4"),
     all(feature = "stm32wl5x_cm0p", feature = "stm32wle5"),
     all(feature = "stm32wl5x_cm4", feature = "stm32wle5"),
@@ -19,7 +19,7 @@ compile_error!(
     "Multile chip features activated. \
     You must activate exactly one of the following features: \
     stm32wl5x_cm0p, stm32wl5x_cm4, stm32wle5"
-);
+);*/
 
 // cfg_hide is not yet working correctly for re-exports
 // https://github.com/rust-lang/rust/issues/85043
@@ -65,6 +65,7 @@ pub mod spi;
 pub mod subghz;
 pub mod uart;
 pub mod util;
+pub mod watchdog;
 
 mod ratio;
 pub use ratio::Ratio;
