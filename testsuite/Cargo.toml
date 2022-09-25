@@ -79,6 +79,11 @@ name = "uart"
 path = "src/uart.rs"
 harness = false
 
+[[bin]]
+name = "wwdg"
+path = "src/wwdg.rs"
+harness = false
+
 [dependencies]
 aes-gcm = { version = "0.10", default-features = false, features = ["aes"] }
 cortex-m-rt = "0.7"
